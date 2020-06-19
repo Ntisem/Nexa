@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Nexa Foundation</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="img/fav/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -27,6 +27,59 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content form-elegant">
+                <!--Header-->
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body mx-4">
+                    <!--Body-->
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer01">Email</label>
+                        <input type="email" class="form-control inputs" id="email" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer02">Password</label>
+                        <input type="password" class="form-control inputs" id="password" required>
+                    </div>
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                    </div>
+                    <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:
+                    </p>
+
+                    <div class="row my-3 d-flex justify-content-center">
+                        <!--Facebook-->
+                        <button type="button" class="btn btn-white fac btn-rounded mr-md-3 z-depth-1a"><i class="ti-facebook text-center"></i></button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btn-white  twi btn-rounded mr-md-3 z-depth-1a"><i class="ti-twitter-alt"></i></button>
+                        <!--Google +-->
+                        <button type="button" class="btn btn-white google btn-rounded z-depth-1a"><i class="ti-google"></i></button>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer mx-5 pt-3 mb-1">
+                    <div class="col-lg-6 text-lg-left text-center">
+                        <div class="modal-vielly">
+                            <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="involved.html" class="blue-text ml-1">
+                     Get Involved</a></p>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal -->
     <!--::header part start::-->
     <header class="main_menu">
         <div class="container">
@@ -52,13 +105,13 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class=" nav-link btn2" style="color:#fff;">Donate </i> </a>
+                                    <a href="donate.html" class=" nav-link btn2" style="color:#fff;">Donate </i> </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Get Involved</a>
+                                    <a class="nav-link" href="involved.html">Get Involved</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Sign In</a>
+                                    <a data-toggle="modal" data-target="#elegantModalForm" class="nav-link">Sign In</a>
                                 </li>
                             </ul>
                         </div>
@@ -120,31 +173,24 @@
     <section class="happy_client">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-12">
                     <div class="single_happy_client">
                         <img src="img/icon/cap.svg" alt="cap">
-                        <span class="counter">85</span>
-                        <h4>Satisfied <br>client</h4>
+                        <span class="counter">35</span>
+                        <h4>Helped <br>People</h4>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-12">
                     <div class="single_happy_client">
                         <img src="img/icon/bag.svg" alt="cap">
-                        <span class="counter">95</span>
+                        <span class="counter">23</span>
                         <h4> Total<br>project</h4>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_happy_client">
-                        <img src="img/icon/shirt.svg" alt="cap">
-                        <span class="counter">75</span>
-                        <h4>work<br>completed</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-12">
                     <div class="single_happy_client">
                         <img src="img/icon/cafe.svg" alt="cap">
-                        <span class="counter">95</span>
+                        <span class="counter">15</span>
                         <h4>work<br>completed</h4>
                     </div>
                 </div>
@@ -159,6 +205,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5">
                     <div class="section_tittle text-center">
+                        <p>---------====---------</p>
                         <h2>Priorities</h2>
                     </div>
                 </div>
@@ -189,12 +236,13 @@
     <!--::our_latest_work end::-->
 
     <!--::blog_part start::-->
-    <section class="blog_part section_padding" style="margin-top:-120px;">
+    <section class="blog_part section_padding" style="margin-top:-150px">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5">
                     <div class="section_tittle text-center">
-                        <h4>Be inspired by the stories of Young Africans leading the Mental Health Revolution in Africa. </h4>
+                        <p>---------====---------</p>
+                        <h4>Be inspired by the stories of young Africans leading the mental health revolution in Africa. </h4>
                         <h2>Read Our Blog</h2>
                     </div>
                 </div>
@@ -205,14 +253,10 @@
                         <div class="card">
                             <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="blog.html">Art, design</a> | <span> March 30, 2019</span>
-                                <a href="blog.html">
-                                    <h5 class="card-title">Seasons form upon days may wont bring given herb sixth</h5>
+                                <a href="single-blog.html">Art, design</a> | <span> March 28, 2020</span>
+                                <a href="single-blog.html">
+                                    <h5 class="card-title">To Overcome Negatives </h5>
                                 </a>
-                                <ul>
-                                    <li> <i class="ti-comments"></i>4 Comments</li>
-                                    <li> <i class="ti-eye"></i>10 View</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -222,14 +266,10 @@
                         <div class="card">
                             <img src="img/blog/blog_1.png" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="blog.html">Technology</a> | <span> March 30, 2019</span>
-                                <a href="blog.html">
-                                    <h5 class="card-title">Seasons form upon days may wont bring given herb sixth</h5>
+                                <a href="single-blog2.html">Technology</a> | <span> April 30, 2020</span>
+                                <a href="single-blog2.html">
+                                    <h5 class="card-title">Negative Effects of Mental Diseases</h5>
                                 </a>
-                                <ul>
-                                    <li> <i class="ti-comments"></i>4 Comments</li>
-                                    <li> <i class="ti-eye"></i>10 View</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -239,15 +279,11 @@
                         <div class="card">
                             <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="blog.html">Technology</a> | <span> March 30, 2019</span>
-                                <a href="blog.html">
-                                    <h5 class="card-title">Very and third him beginning signs hath subdue make
+                                <a href="single-blog3.html">Arts</a> | <span> May 31, 2020</span>
+                                <a href="single-blog3.html">
+                                    <h5 class="card-title">Never Give Up in Life
                                     </h5>
                                 </a>
-                                <ul>
-                                    <li> <i class="ti-comments"></i>4 Comments</li>
-                                    <li> <i class="ti-eye"></i>10 View</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -257,18 +293,15 @@
                         <div class="card">
                             <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="blog.html">Technology</a> | <span> March 30, 2019</span>
-                                <a href="blog.html">
-                                    <h5 class="card-title">Seasons form upon days may wont bring given herb sixth</h5>
+                                <a href="single-blog.html">Technology</a> | <span> June 15, 2020</span>
+                                <a href="single-blog.html">
+                                    <h5 class="card-title">The Youth and The Life Challenges</h5>
                                 </a>
-                                <ul>
-                                    <li> <i class="ti-comments"></i>4 Comments</li>
-                                    <li> <i class="ti-eye"></i>10 View</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="blog.html" class="btn_3">View more blogs<span class="flaticon-slim-right"></span> </a>
             </div>
         </div>
     </section>
@@ -280,6 +313,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_tittle text-center">
+                        <p>---------====---------</p>
                         <h2 style="color:#fff;">Meet the team</h2>
                     </div>
                 </div>
@@ -287,12 +321,12 @@
                     <div class="single_team_member">
                         <img src="img/team/team_1.png" alt="">
                         <div class="single_team_text">
-                            <h3><a href="#"> Jhosef Williams</a></h3>
-                            <p>Web developer</p>
+                            <h3><a href="#"> Nti William</a></h3>
+                            <p>Web Developer & Graphic Designer</p>
                             <div class="team_member_social_icon">
-                                <a href="#">facebok</a>
+                                <a href="#">facebook</a>
                                 <a href="#">twitter</a>
-                                <a href="#">skype</a>
+                                <a href="#">instagram</a>
                             </div>
                         </div>
                     </div>
@@ -301,12 +335,12 @@
                     <div class="single_team_member">
                         <img src="img/team/team_2.png" alt="">
                         <div class="single_team_text">
-                            <h3><a href="#">Daniel Hancock</a></h3>
-                            <p>Web developer</p>
+                            <h3><a href="#">Isaac Amoah</a></h3>
+                            <p>FInancial Officer</p>
                             <div class="team_member_social_icon">
-                                <a href="#">facebok</a>
+                                <a href="#">facebook</a>
                                 <a href="#">twitter</a>
-                                <a href="#">skype</a>
+                                <a href="#">instagram</a>
                             </div>
                         </div>
                     </div>
@@ -315,17 +349,16 @@
                     <div class="single_team_member">
                         <img src="img/team/team_3.png" alt="">
                         <div class="single_team_text">
-                            <h3><a href="#">Bernard Perales</a></h3>
-                            <p>Web developer</p>
+                            <h3><a href="#">Hubert Nathan</a></h3>
+                            <p>Software Developer</p>
                             <div class="team_member_social_icon">
-                                <a href="#">facebok</a>
+                                <a href="#">facebook</a>
                                 <a href="#">twitter</a>
-                                <a href="#">skype</a>
+                                <a href="#">instagram</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -337,6 +370,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5">
                     <div class="section_tittle text-center">
+                        <p>---------====---------</p>
                         <h2>What People Say About Us</h2>
                     </div>
                 </div>
@@ -448,10 +482,10 @@
                 <div class="col-sm-12 col-md-8 col-xl-6">
                     <div class="single-footer-widget footer_2">
                         <div class="social_icon">
-                            <a href="#"> Get to know us</a>
+                            <a href="involved.html"> Get to know us</a>
                             <a href="#">Connect  </a>
                             <a href="#"> Resources</i> </a>
-                            <a href="#"> Get Involved</a>
+                            <a href="involved.html"> Get Involved</a>
                         </div>
                     </div>
                 </div>
@@ -468,7 +502,7 @@
                                     Copyright &copy;
                                     <script>
                                         document.write(new Date().getFullYear());
-                                    </script> Nexa Foundation
+                                    </script> <strong>Nexa Foundation</strong>
                                 </p>
                             </div>
                         </div>

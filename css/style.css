@@ -1398,6 +1398,10 @@ ul {
     }
 }
 
+.colorme {
+    color: #e86e07;
+}
+
 
 /* line 131, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog.scss */
 
@@ -3904,7 +3908,7 @@ ul {
     /* line 43, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_about.scss */
     .about_part .about_img {
         height: 500px;
-        background-image: url(../img/about_img_1.png);
+        background-image: url(../img/about_img_2a.png);
         background-size: cover;
     }
 }
@@ -9101,6 +9105,87 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* ------------------------MODAL -------------------- */
+
+.inputs {
+    border: 1px solid #ff1481;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(7, 136, 217, 0.1);
+}
+
+.blue-gradient {
+    background: #ff1481;
+    color: #fff;
+    max-height: 70px;
+    text-align: center;
+    font-weight: 400px;
+    font-family: Montserrat;
+    width: 400px;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 40px #d889ae;
+}
+
+.modalvielly {
+    width: 96.05px;
+    left: 20px;
+    top: 4689.99px;
+    padding: 0;
+    margin: 0;
+    max-height: 20px;
+    margin-bottom: 20px;
+    margin-left: -40px;
+    #d889ae;
+}
+
+.modal-vielly {
+    max-height: 10px;
+    height: 41.26px;
+    width: 96.05px;
+    float: left;
+    margin-left: -70px;
+    box-shadow: 0px 0px 40px #d889ae;
+}
+
+.btn-white {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #e00069;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.twi:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.fac:hover {
+    background: #0460d8;
+    color: #fff;
+}
+
+.google:hover {
+    background: #ff0e0e;
+    color: #fff;
 }
 
 
